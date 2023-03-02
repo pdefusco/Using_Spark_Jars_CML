@@ -7,8 +7,8 @@ spark = SparkSession.builder.appName("MyApp") \
             .config("spark.jars.repositories", "https://mmlspark.azureedge.net/maven") \
             .getOrCreate()
 
-#.config("spark.yarn.access.hadoopFileSystems", os.environ['STORAGE'])\
-        
+spark.sparkContext.getConf().getAll()
+
 import mmlspark
 
 data = spark.read.parquet("wasbs://publicwasb@mmlspark.blob.core.windows.net/BookReviewsFromAmazon10K.parquet")
