@@ -41,7 +41,7 @@ Open ```local_jars_example.py```, familiarize yourself with the code and run the
 
 ### Option 2: Load Jars from Maven
 
-Some open source libraries are not available via a simple pip install. This is the case for sparkmml, a spark add on with many machine learning algorithms and transformers.
+Some open source libraries are not available via a simple pip install. This is the case for [MMLSpark](https://mmlspark.blob.core.windows.net/website/index.html#install), a Spark module with many machine learning algorithms and transformers going beyond SparkML.
 
 In these circumstances you may have to load your packages from Maven.
 
